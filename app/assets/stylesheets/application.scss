@@ -1,6 +1,27 @@
 @import "bootstrap";
-
-
+.notifications {
+  color: $white;
+  text-align: center;
+  .notice {
+    background-color: lightBlue;
+  }
+  .alert {
+    background-color: alert_orange;
+  }
+}
+// ログイン画面
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
+// 「ログインしました」などのフラッシュ用スタイル
+.alert-notice {
+  @extend .alert-info;
+}
+.alert-alert {
+  @extend .alert-danger;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
