@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   devise_for :users
   root to: 'movies#index'
+  root 'questions#index'
+  resources :questions
 end
