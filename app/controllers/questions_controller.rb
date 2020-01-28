@@ -4,12 +4,12 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
-  def new
-    @question = Question.new
+  def create
+    @question = Question.create!(question_params)
   end
 
-  def create
-    Question.create
-  end
+  def question_params
+  params.require(:question).permit(:title, :content)
+end
 
 end

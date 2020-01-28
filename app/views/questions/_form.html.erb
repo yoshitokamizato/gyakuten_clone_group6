@@ -1,12 +1,10 @@
 <div class="container-new">
-<%= form_for @question, url: questions_path, html: { method: :post } do |f| %>
+<%= form_with model: Question.new do |f| %>
   <p>質問投稿</p>
   <p>【タイトル】</p>
   <p><%= f.text_field :title %></p>
   <p>【内容】</p>
   <p><%= f.text_field :content %></p>
   <input type="submit" value="投稿">
-
 <% end %>
-
 </div>

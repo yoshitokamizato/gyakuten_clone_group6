@@ -1,17 +1,8 @@
+<%= render 'form' %>
+<hr>
 <div class="container-new">
+<div id="questions">
 <%= "質問集" %>
-<% if @questions.present? %>
-<% @questions.each do |question| %>
- <p>
-   <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px;">
-   <%= question.title %>
-   <br>
-   <%= question.content %>
-   </div>
-   <br>
- </p>
-
-<% end %>
-<% end %>
-<%= link_to "質問新規投稿", new_question_path %>
+<%= render @questions %>
+</div>
 </div>
