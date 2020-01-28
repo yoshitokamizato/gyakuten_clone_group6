@@ -23,11 +23,6 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
-gem 'devise'
-gem 'bootstrap', '~> 4.1.1'
-
-gem 'jquery-rails'
-
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
@@ -55,5 +50,16 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'activeadmin'
+
+
+# ログイン機能
 gem 'devise'
-gem 'rails-i18n'
+
+# 日本語化
+gem 'rails-i18n', '~> 5.1'
+gem 'devise-i18n'
+
+# Bootstrap
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
+gem 'devise-bootstrap-views', '~> 1.0'
