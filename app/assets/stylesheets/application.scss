@@ -20,6 +20,13 @@ $font-size-base: 1.5rem;
  */
  .container-new {
    @extend .container-fluid;
-   max-width: 380px;
+   max-width: 550px;
    padding: 2rem;
+
+ }
+ .container-new2 {
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #333333;
+   border-radius: 10px;
  }
