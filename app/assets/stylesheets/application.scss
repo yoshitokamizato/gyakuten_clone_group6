@@ -1,6 +1,17 @@
 @import "bootstrap";
+nav {
+  font-size: 1.5rem
+}
 
-// ログイン画面
+=======
+.movie_title {
+  font-size: 1.3rem
+}
+
+.pagination {
+  justify-content: center;
+}
+>>>>>>> master
 
 .container-login {
   @extend .container-fluid;
