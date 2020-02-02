@@ -17,10 +17,8 @@
   </head>
 
   <body>
-
-=======
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-      <a class="navbar-brand" href="/movies">Gtakuten</a>
+      <a class="navbar-brand" href="/movies">Gyakuten</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -60,17 +58,16 @@
           </li>
           <% if user_signed_in? %>
             <li class="nav-item">
-              <a class="nav-link" href="users/sigun_out" data-method="delete">ログアウト</a>
+              <a class="nav-link" href="users/sign_out" data-method="delete">ログアウト</a>
             </li>
           <% else %>
             <li class="nav-item active">
-              <a class="nav-link" href="users/sigun_in">ログイン</a>
+              <a class="nav-link" href="users/sign_in">ログイン</a>
             </li>
           <% end %>
         </ul>
       </div>
     </nav>
->>>>>>> master
     <%= yield %>
   </body>
 </html>
