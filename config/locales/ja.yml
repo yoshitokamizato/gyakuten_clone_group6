@@ -7,3 +7,9 @@ ja:
         name: '名前'
         age: '年齢'
         address: '住所'
+ja:
+  date:
+    formats:
+      default: ! '%Y/%m/%d'
+      long: ! '%Y/%m/%d'
+      short: ! '%m/%d'

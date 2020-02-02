@@ -2,6 +2,7 @@ class QuestionsController < ApplicationController
   protect_from_forgery
   def index
     @questions = Question.all
+    @questions = Question.all.order(id: "DESC")
   end
 
   def create
