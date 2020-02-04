@@ -1,1 +1,14 @@
-<h1>Movies index</h1>
+<div class="text-center">
+  <% @movies.each.with_index(1) do |movie,i|%>
+    <div class="pt-5 pb-5">
+      <div class="col-xs-12">
+        <div class="movie_title">
+          <%= "#{@base_level + i} #{movie.title}" %>
+        </div>
+          <iframe width="560" height="315" src="<%= "https://www.youtube.com/embed/#{movie.url}" %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= paginate @movies %>
