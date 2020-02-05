@@ -1,7 +1,17 @@
 ja:
   activerecord:
     attributes:
-      user:
+        user:
+        name: '名前'
+        age: '年齢'
+        address: '住所'
+ja:
+  date:
+    formats:
+        default: ! '%Y/%m/%d'
+        long: ! '%Y/%m/%d'
+        short: ! '%m/%d'
+
         confirmation_sent_at: パスワード確認送信時刻
         confirmation_token: パスワード確認用トークン
         confirmed_at: パスワード確認時刻
