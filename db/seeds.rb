@@ -1,3 +1,5 @@
+#アドミンユーザー
+AdminUser.create!(:email => 'admin@example.com', :password => 'password')
 #ログインのためのユーザーseed
 User.create!(email: "test@example.com", password: "password")
 Question.create!(title: "質問１", content: "内容１")
