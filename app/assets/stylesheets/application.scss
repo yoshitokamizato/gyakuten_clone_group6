@@ -2,7 +2,6 @@
 nav {
   font-size: 1.5rem
 }
-
 .movie_title {
   font-size: 1.3rem
 }
@@ -26,3 +25,30 @@ nav {
  *= require_tree .
  *= require_self
  */
+ .container-new {
+   @extend .container-fluid;
+   max-width: 730px;
+   padding: 2rem;
+
+ }
+ .container-new2 {
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #333333;
+   border-radius: 10px;
+ }
+.container-login {
+  @extend .container-fluid;
+  max-width: 576px;
+  padding: 2rem;
+}
+
+// 「ログインしました」などのフラッシュ用スタイル
+
+.alert-notice {
+  @extend .alert-info;
+}
+
+.alert-alert {
+  @extend .alert-danger;
+}
