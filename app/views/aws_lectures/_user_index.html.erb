@@ -1,0 +1,16 @@
+<table class="table table-striped">
+  <thead class="bg-danger text-white">
+    <tr>
+      <th><div class="text-left">No.</div></th>
+      <th><div class="text-left">内容</div></th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <% @lectures.each.with_index(1) do |lecture,i| %>
+      <tr>
+        <td><div class="text-left"><%= "#{i}" %></div></td>
+        <td><div class="text-left"><%= link_to "#{lecture.title}" , aws_lecture_path(lecture.id)%></div></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

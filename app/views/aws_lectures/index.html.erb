@@ -1,0 +1,11 @@
+<div class="text-center">
+  <h2 >AWS講座</h2>
+  <p>注意！AWSは有料です！</p>
+<div/>
+<div class="container">
+      <% if current_user.admin? %>
+        <%= render 'admin_index' %>
+      <% else %>
+        <%= render 'user_index' %>
+      <% end %>
+</div>
