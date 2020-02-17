@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root to: 'movies#index'
-  resources :aws_lectures, only: [:index, :show]
+  resources :aws_lectures
   namespace :admin do
-    resources :aws_lectures, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+    resources :aws_lectures
   end
   resources :questions
   devise_for :admin_users, ActiveAdmin::Devise.config

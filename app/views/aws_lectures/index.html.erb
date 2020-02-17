@@ -1,11 +1,22 @@
 <div class="text-center">
   <h2 >AWS講座</h2>
   <p>注意！AWSは有料です！</p>
-<div/>
+</div>
 <div class="container">
-      <% if current_user.admin? %>
-        <%= render 'admin_index' %>
-      <% else %>
-        <%= render 'user_index' %>
+  <table class="table table-striped">
+    <thead class="bg-danger text-white">
+      <tr>
+        <th><div class="text-left">No.</div></th>
+        <th><div class="text-left">内容</div></th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <% @lectures.each.with_index(1) do |lecture,i| %>
+        <tr>
+          <td><div class="text-left"><%= "#{i}" %></div></td>
+          <td><div class="text-left"><%= link_to "#{lecture.title}" , aws_lecture_path(lecture.id)%></div></td>
+        </tr>
       <% end %>
+    </tbody>
+  </table>
 </div>
