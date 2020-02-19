@@ -6,36 +6,14 @@ class AwsLecturesController < ApplicationController
     @lectures = AwsLecture.all
   end
 
+  def new
+  end
+
   def show
     @lecture = AwsLecture.find(params[:id])
   end
 
-  def new
-    @lecture = AwsLecture.new
-  end
-
-  def create
-    current_user.aws_lectures.create!(lecture_params)
-    if @lecture.save
-      redirect_to "/aws_lectures",success: "投稿完了"
-    else
-      flash.now[:alert] = "記入のないところがあります。確認して下さい。"
-      render :new
-    end
-  end
-
   def edit
-    @lecture
-  end
-
-  def update
-    @lecture.update(lecture_params)
-    redirect_to "/aws_lectures"
-  end
-
-  def destroy
-    @lecture.destroy
-    redirect_to "/aws_lectures"
   end
 
   private

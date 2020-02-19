@@ -2,8 +2,6 @@
 AdminUser.create!(:email => 'admin@example.com', :password => 'password')
 #一般ユーザー
 User.create!(email: "test@example.com", password: "password")
-#管理者
-User.create!(email: "admin@example.com", password: "password", admin: true)
 Question.create!(title: "質問１", content: "内容１")
 Question.create!(title: "質問２", content: "内容２")
 Question.create!(title: "質問３", content: "内容３")
