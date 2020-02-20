@@ -1,0 +1,10 @@
+<div class="container-new">
+  <%= form_with model: Question.new do |f| %>
+    <p>質問投稿</p>
+    <p>【タイトル】</p>
+    <p><%= f.text_area :title, :size=>"38x1" %></p>
+    <p>【内容】</p>
+    <p><%= f.text_area :content, :size=>"38x5" %></p>
+    <input type="submit" name="commit" value="送信" class="btn btn-primary btn-block btn-lg" data-confirm="新規投稿しますか？" data-disable-with="送信" />
+  <% end %>
+</div>
