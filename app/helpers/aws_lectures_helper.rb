@@ -1,0 +1,2 @@
+module AwsLecturesHelper
+end
