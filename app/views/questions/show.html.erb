@@ -6,13 +6,13 @@
   <hr>
   <div class="content">
     <h5>【詳細】</h5>
-    <p><%= @question.content %><p>
+    <p><%= markdown(@question.content) %><p>
   </div>
   <hr>
   <div class="solution">
     <% @solutions.each.with_index(1) do |solution,i| %>
       <h5><%= "【回答""#{i}""】"%></h5>
-      <p><%= solution.answer %><p>
+      <p><%= markdown(solution.answer) %><p>
       <hr>
     <% end %>
   </div>
