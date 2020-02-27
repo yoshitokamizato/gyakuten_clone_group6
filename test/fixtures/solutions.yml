@@ -2,6 +2,8 @@
 
 one:
   answer: MyText
+  question: one
 
 two:
   answer: MyText
+  question: two

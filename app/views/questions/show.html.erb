@@ -1,2 +1,24 @@
-<%= @question.title %>
-<%= @question.content %>
+<div class="container" >
+  <div class="question">
+    <h5>【質問】</h5>
+    <p><%= @question.title %></p>
+  </div>
+  <hr>
+  <div class="content">
+    <h5>【詳細】</h5>
+    <p><%= @question.content %><p>
+  </div>
+  <hr>
+  <div class="solution">
+    <% @solutions.each.with_index(1) do |solution,i| %>
+      <h5><%= "【回答""#{i}""】"%></h5>
+      <p><%= solution.answer %><p>
+      <hr>
+    <% end %>
+  </div>
+  <div class="post">
+    <h3>【回答投稿】</h3>
+    <h5>【回答】</h5>
+    <%= render 'solutions/form' %>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<%= form_with model: @solution,url: '/solutions' do |form| %>
+  <%= form.text_area :answer ,:size=>"110x20" %>
+  <%= form.hidden_field :question_id, value: @question.id %>
+  <input type="submit" name="commit" value="送信" class="btn btn-primary btn-block btn-lg" data-confirm="投稿しますか？" data-disable-with="送信" />
+<% end %>
