@@ -1,5 +1,6 @@
 module MarkdownHelper
   def markdown(text)
+    text ||= ''
     render_options = {
       filter_html: false,
       hard_wrap: true
