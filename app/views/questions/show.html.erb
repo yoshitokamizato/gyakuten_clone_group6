@@ -1,11 +1,11 @@
-<div class="container" >
+<div class="container mt-5" >
   <div class="question">
     <h5>【質問】</h5>
     <p><%= @question.title %></p>
   </div>
   <hr>
   <div class="content">
-    <h5>【詳細】</h5>
+    <h5 class="mt-4">【詳細】</h5>
     <p><%= markdown(@question.content) %><p>
   </div>
   <hr>
@@ -17,7 +17,7 @@
     <% end %>
   </div>
   <div class="post">
-    <h3>【回答投稿】</h3>
+    <h3 class="my-3 ">回答投稿</h3>
     <h5>【回答】</h5>
     <%= render 'solutions/form' %>
   </div>
