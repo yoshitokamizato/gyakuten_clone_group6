@@ -8,6 +8,7 @@ Question.create!(title: "質問３", content: "内容３")
 Question.create!(title: "質問４", content: "内容４")
 Question.create!(title: "質問５", content: "内容５")
 
+
 #movieのseed
 require "csv"
 
