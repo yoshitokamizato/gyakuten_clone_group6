@@ -18,3 +18,10 @@ CSV.foreach('db/seeds/csv/movie.csv', headers: true) do |row|
     url: row['url']
   )
 end
+
+CSV.foreach('db/seeds/csv/php_lecture.csv', headers: true) do |row|
+  PhpLecture.create(
+    title: row['title'],
+    url: row['url']
+  )
+end
