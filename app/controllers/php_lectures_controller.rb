@@ -1,5 +1,5 @@
 class PhpLecturesController < ApplicationController
   def index
-    @php = PhpLecture.all
+    @movies = PhpLecture.all
   end
 end
