@@ -1,0 +1,2 @@
+class VideoEdit < ApplicationRecord
+end

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   root to: 'movies#index'
   resources :php_lectures, only: [:index]
+  resources :conversations, only:[:index]
+  resources :informations, only:[:index]
+  resources :video_edits, only:[:index]
+  resources :writings, only:[:index]
   resources :aws_lectures
   namespace :admin do
     resources :aws_lectures
