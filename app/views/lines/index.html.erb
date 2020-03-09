@@ -1,0 +1,23 @@
+<div class="text-center text-success my-4">
+  <h2 >LINE@</h2>
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <thead class="bg-success text-white">
+      <tr>
+        <th><div class="w-1">No.</div></th>
+        <th><div class="w-2">ジャンル</div></th>
+        <th><div class="w-5">内容</div></th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <% @articles.each.with_index(1) do |article,i| %>
+        <tr>
+          <td><div class="text-left"><%= "#{i}" %></div></td>
+          <td><div class="text-left"><%= "#{article.genre}" %></div></td>
+          <td><div class="text-left"><%= link_to "#{article.title}" , line_path(article.id)%></div></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

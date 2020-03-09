@@ -5,10 +5,8 @@ Rails.application.routes.draw do
   resources :informations, only:[:index]
   resources :video_edits, only:[:index]
   resources :writings, only:[:index]
-  resources :aws_lectures
-  namespace :admin do
-    resources :aws_lectures
-  end
+  resources :aws_lectures,only:[:index, :show]
+  resources :lines,only:[:index, :show]
   resources :questions
   resources :questions do
     resources :solutions, only: :create
